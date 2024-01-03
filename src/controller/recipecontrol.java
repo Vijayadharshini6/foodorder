@@ -9,13 +9,8 @@ import model.customerdetails;
 import model.menumodel;
 
 public class recipecontrol {
-	
-	 private List<menumodel> recipes; 
-	 private List<customerdetails> orderHistory;	
-	    public recipecontrol() {
-	        recipes = new ArrayList<>();
-	        orderHistory = new ArrayList<>();
-	    }
+	  List<menumodel> recipes = new ArrayList<>();
+	  List<customerdetails> orderHistory = new ArrayList<>();		  
 	    public void addRecipe(String receipe, int price, String time) {
 	    	menumodel recipe = new menumodel(receipe, price, time);
 	        recipe.setRecipe(receipe);
